@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--El primer meta tag es para optimizar la pagina para dispositivos mobiles.-->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Technical Documentation Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesp3.css">
+    </head>
+    <body>
+        <nav id = "navbar">
+            <header class = "nav-header"><h1>Documentación Python</h1></header>
+            <ul class = "nav-list">
+                <li><a class = "nav-link" href = "#Introducción_a_Python">Introducción a Python</a></li>
+                <li><a class = "nav-link" href = "#Sintaxis_Básica">Sintaxis Básica</a></li>
+                <li><a class = "nav-link" href = "#Variables_y_Tipos_de_Datos">Variables y Tipos de Datos</a></li>
+                <li><a class = "nav-link" href = "#Estructuras_de_Control">Estructuras de Control</a></li>
+                <li><a class = "nav-link" href = "#Funciones">Funciones</a></li>
+                <li><a class = "nav-link" href = "#Listas_y_Diccionarios">Listas y Diccionarios</a></li>
+                <li><a class = "nav-link" href = "#Programación_Orientada_a_Objetos">Programación Orientada a Objetos</a></li>
+                <li><a class = "nav-link" href = "#Módulos_y_Librerías">Módulos y Librerías</a></li>
+                <li><a class = "nav-link" href = "#Manejo_de_Archivos">Manejo de Archivos</a></li>
+                <li><a class = "nav-link" href = "#Excepciones">Excepciones</a></li>
+                <li><a class = "nav-link" href = "#Conclusión">Conclusión</a></li>
+            </ul>
+        </nav>
+        <main id = "main-doc">  
+            <section class = "main-section" id = "Introducción_a_Python">
+                <header>
+                    <h2>Introducción a Python</h2>
+                </header>
+                <article>
+                    <p>
+                        Python es un lenguaje de programación interpretado, de alto nivel y con una sintaxis clara y sencilla. 
+                        Es ampliamente utilizado en desarrollo web, análisis de datos, inteligencia artificial, automatización y muchas otras áreas.
+                    </p>
+                </article>
+            </section>
+            
+            <section class = "main-section" id = "Sintaxis_Básica">
+                <header>
+                    <h2>Sintaxis Básica</h2>
+                </header>
+                <article>
+                    <p>
+                        Python utiliza una sintaxis clara y legible. No requiere el uso de llaves para definir bloques de código, sino que usa indentación.
+                    </p>
+                    <p>Ejemplo:</p>
+                    <pre><code>
+    # Esto es un comentario
+    print("Hola, mundo!")
+                    </code></pre>
+                </article>
+            </section>
+    
+            <section class = "main-section" id = "Variables_y_Tipos_de_Datos">
+                <header>
+                    <h2>Variables y Tipos de Datos</h2>
+                </header>
+                <article>
+                    <p>
+                        Python es un lenguaje de tipado dinámico, lo que significa que no es necesario declarar el tipo de una variable explícitamente.
+                    </p>
+                    <p>Ejemplo:</p>
+                    <pre><code>
+    x = 5          # Entero
+    nombre = "Ana" # Cadena de texto
+    pi = 3.14      # Flotante
+    es_python = True # Booleano
+                    </code></pre>
+                </article>
+            </section>
+    
+            <section class = "main-section" id = "Estructuras_de_Control">
+                <header>
+                    <h2>Estructuras de Control</h2>
+                </header>
+                <article>
+                    <ul>
+                        <li>
+                            <h3>Condicionales</h3>
+                            <p>Python usa if, elif y else para tomar decisiones en el código.</p>
+                            <pre><code>
+    edad = 18
+    if edad >= 18:
+        print("Eres mayor de edad")
+    elif edad == 17:
+        print("Casi eres mayor de edad")
+    else:
+        print("Eres menor de edad")
+                            </code></pre>
+                        </li>
+                        <li>
+                            <h3>Bucles</h3>
+                            <p>Bucle for</p>
+                            <pre><code>
+    for i in range(5):
+    print(i)
+                            </code></pre>
+                            <p>Bucle while</p>
+                            <pre><code>
+    contador = 0
+    while contador < 5:
+        print(contador)
+        contador += 1
+                            </code></pre>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class = "main-section" id = "Funciones">
+                <header>
+                    <h2>Funciones</h2>
+                </header>
+                <article>
+                    <p>
+                        Las funciones en Python se definen con <strong>def</strong>.
+                    </p>
+                    <pre><code>
+    def saludar(nombre):
+    return f"Hola, {nombre}!"
+
+    print(saludar("Carlos"))
+                    </code></pre>
+                </article>
+            </section>
+    
+            <section class = "main-section" id = "Listas_y_Diccionarios">
+                <header>
+                    <h2>Listas y Diccionarios</h2>
+                </header>
+                <article>
+                    <ul>
+                        <li>
+                            <p>Listas</p>
+                            <pre><code>
+    numeros = [1, 2, 3, 4, 5]
+    numeros.append(6) # Agregar un elemento
+    print(numeros[0]) # Acceder al primer elemento
+                            </code></pre>
+                        </li>
+                        <li>
+                            <p>Diccionarios</p>
+                            <pre><code>
+    persona = {"nombre": "Ana", "edad": 25}
+    print(persona["nombre"]) # Acceder a un valor
+                            </code></pre>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+    
+            <section class = "main-section" id = "Programación_Orientada_a_Objetos">
+                <header>
+                    <h2>Programación Orientada a Objetos</h2>
+                </header>
+                <article>
+                    <p>Python admite POO con clases y objetos.</p>
+                    <pre><code>
+    class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+                            
+    def presentarse(self):
+        return f"Hola, me llamo {self.nombre} y tengo {self.edad} años."
+
+    p = Persona("Luis", 30)
+    print(p.presentarse())
+                    </code></pre>
+                </article>
+            </section>
+    
+            <section class = "main-section" id = "Módulos_y_Librerías">
+                <header>
+                    <h2>Módulos y Librerías</h2>
+                </header>
+                <article>
+                    <p>Python permite reutilizar código mediante módulos y paquetes.</p>
+                    <pre><code>
+    import math
+    print(math.sqrt(16))
+                    </code></pre>
+                </article>
+            </section>
+    
+            <section class = "main-section" id = "Manejo_de_Archivos">
+                <header>
+                    <h2>Manejo de Archivos</h2>
+                </header>
+                <article>
+                    <p>Python facilita la lectura y escritura de archivos.</p>
+                    <pre><code>
+    with open("archivo.txt", "w") as f:
+    f.write("Hola, mundo!")
+                    </code></pre>
+                </article>
+            </section>
+    
+            <section class = "main-section" id = "Excepciones">
+                <header>
+                    <h2>Excepciones</h2>
+                </header>
+                <article>
+                    <p>Python maneja errores con try y except.</p>
+                    <pre><code>
+    try:
+        x = 10 / 0
+    except ZeroDivisionError:
+        print("No se puede dividir por cero")
+                    </code></pre>
+                </article>
+            </section>
+    
+            <section class = "main-section" id = "Conclusión">
+                <header>
+                    <h2>Conclusión</h2>
+                </header>
+                <article>
+                    <p>
+                        Python es un lenguaje versátil y fácil de aprender, ideal tanto para principiantes como para desarrolladores experimentados.
+                    </p>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
